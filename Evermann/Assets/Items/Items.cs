@@ -4,12 +4,30 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
-    //The Item class will be  used on every item. Items will add or subtract from the sanity score.
-    //Items must be spawned in outside of this class.
- 
-   [SerializeField] int _sanityScore;
-   [SerializeField] string _itemName;
-   
+    [SerializeField] int _sanityScore;
+    [SerializeField] string _itemName;
+    [SerializeField] GameObject _item;
 
-  
+    public GameObject getItem()
+    {
+        return _item;
+    }
+
+    public int getSanity()
+    {
+        return _sanityScore;
+    }
+    public string getName()
+    {
+        return _itemName;
+    }
+
+    public static Items chooseItem(Items[] a)
+    {
+        int rand = Random.Range(0, a.Length);
+        Debug.Log(rand);
+        return a[rand];
+
+
+    }
 }

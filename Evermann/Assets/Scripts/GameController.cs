@@ -19,8 +19,14 @@ public class GameController : MonoBehaviour
     private GameObject itemName;
     private bool currentlyEnding = false;
 
+    // ITEM SCRIPT RELATED
+    GameObject itemObject;
+    Items item;
+    [SerializeField] Items[] items;
+    ////////////////////////////////
+
     [SerializeField] GameObject monster;
-    [SerializeField] GameObject item;
+    //[SerializeField] GameObject item;
     [SerializeField] GameObject safety;
     [SerializeField] AudioSource audioSource;
     [SerializeField] Text doorsLeft;
@@ -113,8 +119,19 @@ public class GameController : MonoBehaviour
         }
         if (outcome.name.Equals("Item(Clone)"))
         {
-            outcomeText.text = "ITEM";
-            damageDesc.text = "-X Sanity";
+            //outcomeText.text = "ITEM";
+            //damageDesc.text = "-X Sanity";
+
+            outcomeText.text = item.getName();
+            damageDesc.text = item.getSanity() + " Sanity";
+
+            Debug.Log(item.getSanity());
+
+            playerCurrentSanity += item.getSanity();
+
+            healthBar.SetHealth(playerCurrentSanity);
+
+
             audioSource.PlayOneShot(audioClips[1]);
             Debug.Log("ITEM");
         }
@@ -224,7 +241,12 @@ public class GameController : MonoBehaviour
         }
         else if(rand < 60)
         {
-            return item;
+            item = Items.chooseItem(items);
+            itemObject = item.getItem(); //get GameObject
+            itemObject.name = "Item";
+            return itemObject;
+
+            //return item;
         }
         else if (rand <= 90)
         {
