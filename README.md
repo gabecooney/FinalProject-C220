@@ -2,38 +2,32 @@
 MSCH-C220 Game Jam, November 2021
 
 ## Theme
-How you thought about or interpreted the theme
-
-Todo
+We interpreted the theme pick your poison as making choices. So in Evermann, players must choose the correct doors to prevent them from going insane. 
 
 ## Game Play
-Objective
-Game-play instructions
-
-Todo
+The objective is to escape Evermann by selecting the correct doors. 
+Choose a door, depending on which door you choose you may be safe, find an item, or run into the creature.
 
 ## Impediments
-Struggles or surprises you encountered during the development of the game
-
-Todo
+Creating out own model proved to be difficult as blender sculpting was very unhelpful and misleading. 
+Finding item models as well.
 
 ## Implementation
-Features
-Assets, or resources used
-
-Doors, lemon, and briefcase models are from https://www.cgtrader.com/free-3d-models
-Background music/ambience from https://freesound.org/people/richwise/sounds/456207/
-
-Todo
+All sounds were created by Andy Myers in Audacity
+Scenes and code were implemented by Xander Wilson and Gabe Cooney
+Anastasia Kersh:
+      Doors, lemon, and briefcase models are from https://www.cgtrader.com/free-3d-models
+      Background music/ambience from https://freesound.org/people/richwise/sounds/456207/
 
 ## References
-
-Todo
+https://www.cgtrader.com/free-3d-models
+https://freesound.org/people/richwise/sounds/456207/
 
 ## Future Development
 None
 
 # Created by: Group Name
-List of group members (and contributions)
-
-Todo
+Xander Wilson: Main Scenes, Coding, asset implementation
+Gabe Cooney: Asset implementation, coding
+Andy Myers: Sound Effects (Monster, Item Pickup, Doors, Sanity Increas/Decrease, Game Win/Loss, Correct/Incorrect Choice, and Breathing) , Monster Model
+Anastasia Kersh: Background Music, Ambience Music, Item Models
