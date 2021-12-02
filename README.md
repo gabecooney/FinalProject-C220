@@ -21,6 +21,8 @@ Todo
 Features
 Assets, or resources used
 
+Doors, lemon, and briefcase models are from https://www.cgtrader.com/free-3d-models
+
 Todo
 
 ## References
