@@ -17,7 +17,9 @@ public class GameController : MonoBehaviour
     private GameObject outcome;
 
     [SerializeField] GameObject monster;
-    [SerializeField] GameObject item;
+    //[SerializeField] Serialized no longer needed because the item is chosen through th
+    GameObject itemObject;
+    Items item;
     [SerializeField] GameObject safety;
     [SerializeField] AudioSource audioSource;
     [SerializeField] Text doorsLeft;
@@ -25,6 +27,7 @@ public class GameController : MonoBehaviour
     [SerializeField] Image fadingToBlack;
     [SerializeField] int playerMaxSanity = 100;
     [SerializeField] int monsterDamage = 20;
+    [SerializeField] Items[] items;
 
 
     // Start is called before the first frame update
@@ -65,7 +68,13 @@ public class GameController : MonoBehaviour
         }
         if (outcome.name.Equals("Item"))
         {
-            outcomeText.text = "ITEM";
+            //outcomeText.text = "ITEM";
+            //added code for items
+            
+
+            outcomeText.text = item.getName();
+            healthBar.SetHealth(playerCurrentSanity + item.getSanity());
+
             audioSource.PlayOneShot(audioClips[1]);
             Debug.Log("ITEM");
         }
@@ -141,7 +150,10 @@ public class GameController : MonoBehaviour
         }
         else if(rand < 60)
         {
-            return item;
+            item = Items.chooseItem(items);
+            itemObject = item.getItem(); //get GameObject
+            itemObject.name = "Item";
+            return itemObject;
         }
         else if (rand < 90)
         {

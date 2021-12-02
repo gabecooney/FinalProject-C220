@@ -5,16 +5,29 @@ using UnityEngine;
 public class Items : MonoBehaviour
 {
    [SerializeField] int _sanityScore;
-    [SerializeField] string _itemName;
-   
+   [SerializeField] string _itemName;
+   [SerializeField] GameObject _item;
 
-    private void OnMouseOver()
+    public GameObject getItem()
     {
-        // Display Item Name
+        return _item;
     }
-    private void OnMouseUpAsButton()
-    {   //Update Global Sanity and execute audio and visual effects
-        // _sanityScore + SanityLevel
+
+        public int getSanity()
+    {
+        return _sanityScore;
+    }
+    public string getName()
+    {
+        return _itemName;
+    }
+
+    public static Items chooseItem(Items[] a)
+    {
+        int rand = Random.Range(0, a.Length);
+        Debug.Log(rand);
+        return a[rand];
+
 
     }
 }
