@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
+    //The Item class will be  used on every item. Items will add or subtract from the sanity score.
+    //Items must be spawned in outside of this class.
+ 
    [SerializeField] int _sanityScore;
-    [SerializeField] string _itemName;
+   [SerializeField] string _itemName;
    
 
-    private void OnMouseOver()
-    {
-        // Display Item Name
-    }
-    private void OnMouseUpAsButton()
-    {   //Update Global Sanity and execute audio and visual effects
-        // _sanityScore + SanityLevel
-
-    }
+  
 }
