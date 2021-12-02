@@ -22,6 +22,7 @@ Features
 Assets, or resources used
 
 Doors, lemon, and briefcase models are from https://www.cgtrader.com/free-3d-models
+Background music/ambience from https://freesound.org/people/richwise/sounds/456207/
 
 Todo
 
