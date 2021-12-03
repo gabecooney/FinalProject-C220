@@ -23,6 +23,8 @@ Anastasia Kersh:
 https://www.cgtrader.com/free-3d-models
 https://freesound.org/people/richwise/sounds/456207/
 
+The font Something Strange is by Jonathan S. Harris (https://www.fontspace.com/category/blood) and is free for personal use.
+
 Textures (Plaster and wood floor) are from Half-Life Alyx, and are trademarks and properties of the Valve Corporation (https://www.valvesoftware.com/en/). Additional door model is also from Half-Life Alyx.
 
 ## Future Development
