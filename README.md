@@ -10,7 +10,7 @@ Choose a door, depending on which door you choose you may be safe, find an item,
 
 ## Impediments
 Creating out own model proved to be difficult as blender sculpting was very unhelpful and misleading. 
-Finding item models as well.
+Finding item models as well. Also, we had issues with the Github Branches
 
 ## Implementation
 All sounds were created by Andy Myers in Audacity
@@ -22,6 +22,8 @@ Anastasia Kersh:
 ## References
 https://www.cgtrader.com/free-3d-models
 https://freesound.org/people/richwise/sounds/456207/
+
+Textures (Plaster and wood floor) are from Half-Life Alyx, and are trademarks and properties of the Valve Corporation (https://www.valvesoftware.com/en/). Additional door model is also from Half-Life Alyx.
 
 ## Future Development
 None
